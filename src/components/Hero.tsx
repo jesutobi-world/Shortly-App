@@ -1,10 +1,10 @@
-
+import illustration from '../images/illustration-working.svg'
 
 export const Hero = () => {
   return (
     <section className="hero">
     <div className="hero-image">
-      <img src="./images/illustration-working.svg" alt="illustration"/>
+      <img src={illustration} alt="illustration"/>
     </div>
     <div className="hero-text">
       <div className="hero-heading">
