@@ -11,11 +11,13 @@ body {
     height: auto;
     width: 100vw;
 }
-#root{
+
+#root {
     width: 100%;
     height: auto;
 }
-.app{
+
+.app {
     width: 100%;
     height: auto;
 }
@@ -122,7 +124,8 @@ main {
     height: 100%;
     width: 100%;
 }
-.hero-text{
+
+.hero-text {
     height: auto;
     width: 100%;
     text-align: center;
@@ -195,35 +198,28 @@ main {
     background-position: top right;
 }
 
-form input{
+form input {
     height: 60px;
     border-radius: 5px;
 }
-form div{
+
+form div {
     display: flex;
     flex-direction: column;
     height: auto;
     gap: 5px;
 }
-form div input{
+
+form div input {
     height: 60px;
 }
-form div p{
+
+form div p {
     color: hsl(0, 87%, 67%);
     font-style: italic;
     font-size: 14px;
 }
-.error-border{
-    border: 3px solid hsl(0, 87%, 67%);
-}
 
-.error{
-    display: none;
-}
-
-.error-placeholder::placeholder {
-    color: hsl(0, 84%, 78%);
-  }
 
 
 input[type="text"] {
@@ -242,12 +238,21 @@ input[type="submit"] {
     border: none;
     outline: none;
 }
-.links{
+
+#error-border {
+    border: 3px solid hsl(0, 87%, 67%);
+}
+
+#error-border::placeholder {
+    color: hsl(0, 87%, 67%);
+}
+
+.links {
     width: 100%;
     height: auto;
 }
 
-.link{
+.link {
     width: 100%;
     height: auto;
     margin-top: 20px;
@@ -256,20 +261,25 @@ input[type="submit"] {
     display: flex;
     flex-direction: column;
 }
-.default-link{
+
+.default-link {
     padding: 20px;
     border-bottom: 1px solid hsl(0, 0%, 75%);
+    overflow-wrap: break-word;
 }
-.shortened{
+
+.shortened {
     padding: 20px;
     gap: 20px;
     display: flex;
     flex-direction: column;
 }
-.shortened-link{
+
+.shortened-link {
     color: hsl(180, 66%, 49%);
 }
-.copy-button{
+
+.copy-button {
     height: 60px;
     outline: none;
     border: none;
@@ -279,10 +289,14 @@ input[type="submit"] {
     font-size: 20px;
     cursor: pointer;
 }
-.copy-button:hover{
+.copy-button.copied {
+    background-color: hsl(257, 27%, 26%); 
+  }
+
+.copy-button:hover {
     color: white;
     background-color: #9be3e2;
-    transition: ease-in-out  0.3s;
+    transition: ease-in-out 0.3s;
 }
 
 
@@ -352,6 +366,7 @@ input[type="submit"] {
     position: absolute;
     top: -50px;
 }
+
 .card h3 {
     margin-top: 70px;
     font-size: 24px;
@@ -457,43 +472,50 @@ footer .logo p {
     height: 30px;
     width: 30px;
     object-fit: cover;
-    
+
 }
 
 .socials a i {
     color: white;
     font-size: 35px;
 }
+
 /* General active states */
-nav>section>a:hover{
+nav>section>a:hover {
     color: hsl(260, 8%, 14%);
     transition: ease-in-out all 0.3s;
 }
-.button:hover{
+
+.button:hover {
     background-color: #9be3e2;
     color: white;
     transition: ease-in-out all 0.3s;
 }
-.hero-button a:hover{
+
+.hero-button a:hover {
     background-color: #9be3e2;
     color: white;
     transition: ease-in-out all 0.3s;
 }
-input[type="submit"]:hover{
+
+input[type="submit"]:hover {
     background-color: #9be3e2;
     color: white;
     transition: ease-in-out all 0.3s;
 }
-.boost button:hover{
+
+.boost button:hover {
     transition: ease-in-out all 0.3s;
     background-color: #9be3e2;
     color: white;
 }
-.footer-nav div a:hover{
+
+.footer-nav div a:hover {
     color: hsl(180, 66%, 49%);
     transition: ease-in-out all 0.3s;
 }
-.socials a i:hover{
+
+.socials a i:hover {
     color: hsl(180, 66%, 49%);
     transition: ease-in-out all 0.3s;
 }
@@ -573,42 +595,50 @@ input[type="submit"]:hover{
         width: 120px;
         color: white;
     }
+
     main {
         padding-top: 100px;
     }
-    .hero{
+
+    .hero {
         flex-direction: row-reverse;
         padding: 0 100px;
         gap: 0;
     }
 
-    .hero-image{
+    .hero-image {
         width: 50%;
         height: auto;
     }
-    .hero-text{
+
+    .hero-text {
         text-align: left;
         width: 50%;
         align-items: flex-start;
     }
-    .hero-heading h1{
+
+    .hero-heading h1 {
         font-size: 50px;
     }
-    .hero-button a{
+
+    .hero-button a {
         height: 50px;
         width: 200px;
         font-size: 18px;
     }
-    .cards{
+
+    .cards {
         padding: 100px;
     }
-    .form-overlay{
+
+    .form-overlay {
         position: absolute;
         top: -65px;
         width: 84%;
 
     }
-    .cards form{
+
+    .cards form {
         background: url(./images/bg-shorten-desktop.svg);
         background-position: top left;
         background-size: 100%;
@@ -619,10 +649,12 @@ input[type="submit"]:hover{
         height: 130px;
         width: 100%;
     }
-    form div input{
+
+    form div input {
         height: 50px;
     }
-    form div{
+
+    form div {
         height: 50px;
         display: flex;
         flex-direction: column;
@@ -630,31 +662,37 @@ input[type="submit"]:hover{
         justify-content: center;
         position: relative;
     }
-    form div p{
+
+    form div p {
         font-size: 12px;
         position: absolute;
         top: 110%;
     }
-    form div:first-child{
+
+    form div:first-child {
         width: calc(95% - 150px);
     }
-    form div:last-child{
+
+    form div:last-child {
         width: 150px;
     }
-    input[type="text"]{
+
+    input[type="text"] {
         font-size: 18px;
         width: 100%;
     }
-    input[type="submit"]{
+
+    input[type="submit"] {
         width: 100%;
         font-size: 18px;
     }
-    .links{
+
+    .links {
         width: 100%;
         height: auto;
     }
-    
-    .link{
+
+    .link {
         width: 100%;
         height: auto;
         margin-top: 10px;
@@ -663,40 +701,49 @@ input[type="submit"]:hover{
         align-items: center;
         padding: 0 20px;
     }
-    .default-link{
+
+    .default-link {
         border-bottom: none;
     }
-    .shortened{
+
+    .shortened {
         padding: 0;
         flex-direction: row;
         align-items: center;
     }
-    .shortened-link{
+
+    .shortened-link {
         color: hsl(180, 66%, 49%);
     }
-    .copy-button{
+
+    .copy-button {
         font-size: 16px;
         width: 100px;
         height: 40px;
     }
-    .stats{
+
+    .stats {
         width: 50%;
         margin-top: 70px
     }
-    .stats p{
+
+    .stats p {
         margin-bottom: 25px;
     }
-    .dashboard{
+
+    .dashboard {
         flex-direction: row;
         gap: 50px;
         margin-top: 0;
     }
-    .line{
+
+    .line {
         transform: rotate(90%);
         height: 7px;
         width: 50%;
     }
-    .card{
+
+    .card {
         width: 400px;
         height: 270px;
         padding: 18px 22px;
@@ -704,68 +751,80 @@ input[type="submit"]:hover{
         text-align: left;
         align-items: flex-start;
     }
-    .icon{
+
+    .icon {
         left: 40px;
         height: 70px;
         width: 70px;
         top: -30px;
     }
-    .card h3{
+
+    .card h3 {
         font-size: 20px;
         text-align: left;
         margin-top: 50px;
     }
-    .card p{
+
+    .card p {
         font-size: 14px;
         line-height: 25px;
     }
-    .records{
+
+    .records {
         margin-top: 100px;
     }
-    .customize{
+
+    .customize {
         margin-top: 160px;
     }
-    .boost-overlay{
+
+    .boost-overlay {
         height: 270px;
     }
-    .boost{
-        background:url(./images/bg-boost-desktop.svg);
+
+    .boost {
+        background: url(./images/bg-boost-desktop.svg);
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .boost h4{
+
+    .boost h4 {
         font-size: 25px;
     }
-    .boost button{
+
+    .boost button {
         font-size: 18px;
         height: 50px;
         width: 180px;
     }
-    
+
     footer {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
         padding: 70px 100px;
     }
-    footer .logo p{
+
+    footer .logo p {
         font-size: 30px;
     }
-    .footer-nav{
+
+    .footer-nav {
         flex-direction: row;
         align-items: flex-start;
         text-align: left;
         gap: 80px;
     }
+
     .footer-nav div h5 {
         font-size: 20px;
         padding-bottom: 15px;
     }
-    .footer-nav div a{
+
+    .footer-nav div a {
         font-size: 14px;
         padding-bottom: 20px;
     }
 
 
 }
-

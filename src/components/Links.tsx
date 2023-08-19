@@ -1,10 +1,16 @@
 import {Link} from './Link'
 
-export const Links = () => {
-  return (
-    <div className='links'>
-        <Link/> 
-        <Link/>
-    </div>
-  )
+interface LinksProps {
+  fullShortLinks: string[];
+  inputUrls: string[]
 }
+
+export const Links: React.FC<LinksProps> = ({ fullShortLinks,inputUrls }) => {
+  return (
+      <div className="links">
+          {fullShortLinks.map((fullShortLink:string, index) => (
+              <Link key={index} fullShortLink={fullShortLink} inputUrl={inputUrls[index]} />
+          ))}
+      </div>
+  );
+};
