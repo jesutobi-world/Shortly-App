@@ -1,6 +1,7 @@
 import imageBrand from '../images/icon-brand-recognition.svg'
 import imageRecords from '../images/icon-detailed-records.svg'
 import imageCustomize from '../images/icon-fully-customizable.svg'
+import {Links} from './Links'
 
 export const Dashboard = () => {
   return (
@@ -14,6 +15,7 @@ export const Dashboard = () => {
         <div><input type="submit" value="Shorten It!"/></div>
       </form>
     </div>
+    <Links/>
     <div className="stats">
       <h2>Advanced Statistics</h2>
         <p> Track how your links are performing across the web with our advanced statistics dashboard.</p>

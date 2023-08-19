@@ -242,6 +242,49 @@ input[type="submit"] {
     border: none;
     outline: none;
 }
+.links{
+    width: 100%;
+    height: auto;
+}
+
+.link{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.default-link{
+    padding: 20px;
+    border-bottom: 1px solid hsl(0, 0%, 75%);
+}
+.shortened{
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.shortened-link{
+    color: hsl(180, 66%, 49%);
+}
+.copy-button{
+    height: 60px;
+    outline: none;
+    border: none;
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.copy-button:hover{
+    color: white;
+    background-color: #9be3e2;
+    transition: ease-in-out  0.3s;
+}
+
 
 .stats {
     text-align: center;
