@@ -177,7 +177,7 @@ main {
     background-color: hsl(257, 27%, 26%);
     position: absolute;
     top: -95px;
-    width: 90%;
+    width: 85%;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -605,6 +605,7 @@ input[type="submit"]:hover{
     .form-overlay{
         position: absolute;
         top: -65px;
+        width: 84%;
 
     }
     .cards form{
@@ -647,6 +648,36 @@ input[type="submit"]:hover{
     input[type="submit"]{
         width: 100%;
         font-size: 18px;
+    }
+    .links{
+        width: 100%;
+        height: auto;
+    }
+    
+    .link{
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    .default-link{
+        border-bottom: none;
+    }
+    .shortened{
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+    }
+    .shortened-link{
+        color: hsl(180, 66%, 49%);
+    }
+    .copy-button{
+        font-size: 16px;
+        width: 100px;
+        height: 40px;
     }
     .stats{
         width: 50%;

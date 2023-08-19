@@ -4,6 +4,7 @@ export const Links = () => {
   return (
     <div className='links'>
         <Link/> 
+        <Link/>
     </div>
   )
 }
