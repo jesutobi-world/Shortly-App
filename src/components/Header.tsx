@@ -17,7 +17,7 @@ export const Header = () => {
         <i className="fa-solid fa-bars"></i>
       </div>
     </section>
-    <nav style={{ display: isNavVisible ? "block" : "none" }}>
+    <nav style={{ display: isNavVisible ? "flex" : "none" }}>
       <section className="border">
         <a href="#">Features</a>
         <a href="#">Pricing</a>
