@@ -71,10 +71,6 @@ header>nav {
     top: 100px;
 }
 
-/* .nav-visivle{
-
-} */
-
 nav>section {
     width: 100%;
     display: flex;
@@ -529,15 +525,27 @@ input[type="submit"]:hover {
 }
 
 
-/* Tablet Design */
-/* @media (min-width: 600px) {
-
-  } */
-/* Desktop Design */
-/* @media (min-width: 992px) {
-    body {
+/* Tablet devices */
+@media (min-width: 768px) and (max-width: 959px) {
+    header{
+        display: flex;
+        justify-content: center;
     }
-  } */
+    footer{
+        align-items: flex-start;
+        padding-left: 100px;
+    }
+    .footer-nav{
+        width: 70%;
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+    }
+    .socials{
+        width: 50%;
+        justify-content: space-between;
+    }
+}
 
 @media (min-width: 960px) {
     header {
